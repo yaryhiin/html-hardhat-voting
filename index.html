@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Voting</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>Voting App</header>
+    <main>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <p></p>
+            </div>
+        </div>
+        <div id="container">
+            <button id="connect-btn" class="button">Connect</button>
+            <div id="vote-container">
+                <label for="candidates" class="label">Vote for</label>
+                <select id="candidates" class="select">
+                    <option value="Connect wallet to see candidates" >Connect wallet to see candidates</option>
+                </select>
+                <button id="vote-btn" class="button">Vote</button>
+            </div>
+            <div id="becomeCandidate-container">
+                <label for="candidateName" class="label">Your name for candidate is</label>
+                <input id="candidateName" class="input" placeholder="For example: Elon Musk">
+                <button id="becomeCandidate-btn" class="button">Become Candidate</button>
+            </div>
+            <div id="candidates-top-container">
+                <button id="candidatesTop-btn" class="button">Show candidates Top</button>
+                <div id="candidatesTop-el"></div>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
